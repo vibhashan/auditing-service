@@ -1,6 +1,6 @@
 {
   "name": "auditing-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An audit logging service for MongoDB crud operations",
   "main": "index.js",
   "scripts": {

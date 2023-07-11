@@ -21,16 +21,14 @@ time
 1. Install this package using "npm install auditing-service".
 2. Import the package in your code.
 
-```
-javascript
+```javascript
 
 const auditingService = require("auditing-service");
 ```
 
 3. Initialize the package by invoking "initAudit" function. By default, a collection named "audit_trails" will be created in a database named "auditDB".
 
-```
-javascript
+```javascript
 
 auditingService.initAudit(YOUR_MONGO_URI);
 // Eg - auditingService.initAudit(mongodb+srv://username:password@something_here.mongodb.net/);
@@ -50,8 +48,7 @@ auditingService.initAudit(YOUR_MONGO_URI, YOUR_DB_NAME, YOUR_COLLECTION_NAME);
 
 ### _Success Scenario_
 
-```
-javascript
+```javascript
 // Function prototype
 auditingService.createAudit(oldData, newData, outcome)
 
@@ -73,8 +70,7 @@ is "success".
 
 ### _Failure Scenario_
 
-```
-javascript
+```javascript
 // Function prototype
 auditingService.createAudit(oldData, newData, outcome)
 
@@ -94,8 +90,7 @@ is "failure".
 
 ### _Success Scenario_
 
-```
-javascript
+```javascript
 
 // Function prototype
 auditingService.reeadAudit(oldData, newData, outcome);
@@ -128,8 +123,7 @@ For a success scenario, before read operation is performed, oldData is not null.
 
 ### _Failure Scenario_
 
-```
-javascript
+```javascript
 
 // Function prototype
 auditingService.readAudit(oldData, newData, outcome);
@@ -160,8 +154,7 @@ For a failure scenario, before read operation is performed, oldData is not null.
 
 ### _Success Scenario_
 
-```
-javascript
+```javascript
 
 // Function prototype
 auditingService.updateAudit(oldData, newData, outcome);
@@ -189,8 +182,7 @@ For a success scenario, before update operation is performed, oldData is not nul
 
 ### _Failure Scenario_
 
-```
-javascript
+```javascript
 
 // Function prototype
 auditingService.updateAudit(oldData, newData, outcome);
@@ -220,8 +212,7 @@ For a failure scenario, before update operation is performed, oldData is not nul
 
 ### _Success Scenario_
 
-```
-javascript
+```javascript
 
 // Function prototype
 auditingService.deleteAudit(oldData, newData, outcome);
@@ -245,8 +236,7 @@ For a success scenario, before delete operation is performed, oldData is not nul
 
 ### _Failure Scenario_
 
-```
-javascript
+```javascript
 
 // Function prototype
 auditingService.deleteAudit(oldData, newData, outcome);

@@ -1,0 +1,23 @@
+{
+  "name": "auditing-service",
+  "version": "1.0.0",
+  "description": "An audit logging service for MongoDB crud operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibhashan/auditing-service.git"
+  },
+  "author": "Vibhashana Ranhinda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vibhashan/auditing-service/issues"
+  },
+  "homepage": "https://github.com/vibhashan/auditing-service#readme",
+  "dependencies": {
+    "ip": "^2.0.0",
+    "mongoose": "^7.3.2"
+  }
+}
